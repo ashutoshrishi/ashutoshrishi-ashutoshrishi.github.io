@@ -1,0 +1,100 @@
+html {
+	height: 100%;
+}
+
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+   background-color: #f4f4f4;
+   min-height: 100%;
+}
+
+.home {
+	background-image: url("../logo.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 340px;
+
+}
+
+.border {
+	height: 500px;
+	border-left: 2px dashed #ccc;
+}
+
+.full-row {
+	max-width: 100%;
+}
+
+
+.pilot {
+	min-height: 200px;
+	border-top: 2px dashed #CCC;
+	padding-top: 55px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 55px;
+}
+
+.pilot span {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  	font-weight: 300;
+  	display: inline-block;
+	padding: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	font-size: 30px;
+	transition: all 1s;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    position: relative;
+}
+
+
+
+.capsule {
+	background-color: #336699;
+	color: #eee;
+	display: inline-block;
+	height: 30px;
+	min-width: 100px;
+	padding: 7px;
+}
+
+
+.showoff3 {
+	background-color: #336699;
+	color: #fff;
+}
+
+.showoff2 {
+	background-color: #cfcfcf;
+	color: #336699;
+}
+
+.showoff2:hover {
+	background-color: #eee;
+	color: #336699;
+	top: -2px;
+}
+
+.button {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  	font-weight: 300;
+ }
+
+.btn-flat {
+	border-radius: 10px;
+	box-shadow: none;
+	border: none;
+}
+
+.btn-blue {
+	background-color: #336699;
+}
+
+.header-logo {
+	margin-top: 100px;
+}
