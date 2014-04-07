@@ -1,3 +1,5 @@
+@import url('ui.css');
+
 html {
 	height: 100%;
 }
@@ -5,17 +7,33 @@ html {
 body {
    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    font-weight: 300;
-   background-color: #f4f4f4;
+   background-color: white;
    min-height: 100%;
 }
 
 .home {
 	background-image: url("../logo-retina@2x.png");
-	background-position: center;
+	background-position: center ;
 	background-repeat: no-repeat;
 	background-size: 220px 220px;
 	min-height: 240px;
-	margin-top: 45px;
+        text-align: center;
+}
+
+.home-test {
+    background-image: url("../logo-retina@2x.png");
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: 220px 220px;
+    min-height: 270px;
+    width: 230px;
+    background-color: rgba(243, 243, 243, 1);
+    margin: auto;
+    box-shadow:   
+    5px 5px #369,
+    10px 10px rgba(200, 195, 195, 1),
+    15px 15px #D2D2D2,
+    20px 20px rgba(221, 228, 221, 1);
 }
 
 .border {
@@ -52,6 +70,30 @@ body {
     position: relative;
 }
 
+.name {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 1.5em;
+    color: rgba(89, 89, 89, 1);
+    text-align: center;
+}
+
+.name p {
+    letter-spacing: 3px;
+}
+
+.name strong {
+    font-size: 1.4em;
+}
+
+.name small {
+    font-size: 0.75em;
+    color: #AAA;
+}
+
+.bordered {
+    border-right: 3px dashed #CCC;
+}
+
 
 
 .capsule {
@@ -73,7 +115,7 @@ body {
 	color: #fff;
 }
 
-.showoff2 {
+pp.showoff2 {
 	background-color: #cfcfcf;
 	color: #336699;
 }
@@ -117,3 +159,5 @@ body {
 	font-size: 1em;
 	color: #808080;
 }
+
+

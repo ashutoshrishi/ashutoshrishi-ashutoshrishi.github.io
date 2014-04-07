@@ -1,0 +1,78 @@
+@dark-blue: rgba(8, 78, 138, 1);
+@base-blue: rgba(24, 116, 222, 1);
+@base-red: rgba(186, 67, 67, 1);
+@base-green: rgba(3, 134, 74, 1);
+
+.boxybutton {
+    padding: 3px 10px 5px 10px;
+    background-color: #CCC;
+    margin-right: 10px;
+   
+}
+
+.boxybutton-normal {
+    .boxybutton;
+    background-color: rgba(237, 236, 236, 1);
+    box-shadow: 5px 5px 0px 0px #369, 10px 10px 0px 0px rgba(177, 177, 177, 1);
+    
+    &:hover {
+        box-shadow: 5px 5px 0px 0px rgba(174, 171, 171, 1), 10px 10px 0px 0px #336699;
+    }
+}
+
+.boxybutton-blue {
+    .boxybutton;
+    background-color: @base-blue;
+    box-shadow: 5px 5px 0px 0px rgba(2, 87, 173, 1), 10px 10px 0px 0px rgba(100, 206, 255, 1);
+    color: #FFF;
+    
+    &:hover {
+        background-color: lighten(@base-blue, 10%);
+    }
+    
+    a {
+        color: #fff;
+    }
+}
+
+.boxybutton-red {
+    .boxybutton;
+    background-color: @base-red;
+    box-shadow: 5px 5px 0px 0px darken(@base-red, 15%), 10px 10px 0px 0px lighten(@base-red, 20%);
+    color: #FFF;
+}
+
+.boxybutton-green {
+    .boxybutton;
+    background-color: @base-green;
+    box-shadow: 5px 5px 0px 0px lighten(@base-green, 5%), 10px 10px 0px 0px lighten(@base-green, 20%);
+    color: #FFF;
+
+    a {
+        color: #fff;
+    }
+}
+
+
+.shoutout {
+    background-color: rgba(94, 104, 99, 1);
+    font-size: 1.5em;
+}
+
+.sidelinks li a {
+    text-decoration: none;
+}
+
+.sidelinks {
+    margin-top: 10px;
+    
+    li {
+        display: inline-block;
+    }
+    
+    li a {
+        color: @dark-blue;
+        font-size: 0.8em;
+        font-family: "Monospace";
+    }
+}

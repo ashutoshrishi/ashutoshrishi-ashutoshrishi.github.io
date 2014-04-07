@@ -1,0 +1,66 @@
+.boxybutton {
+  padding: 3px 10px 5px 10px;
+  background-color: #CCC;
+  margin-right: 10px;
+}
+.boxybutton-normal {
+  padding: 3px 10px 5px 10px;
+  background-color: #CCC;
+  margin-right: 10px;
+  background-color: #edecec;
+  box-shadow: 5px 5px 0px 0px #336699, 10px 10px 0px 0px #b1b1b1;
+}
+.boxybutton-normal:hover {
+  box-shadow: 5px 5px 0px 0px #aeabab, 10px 10px 0px 0px #336699;
+}
+.boxybutton-blue {
+  padding: 3px 10px 5px 10px;
+  background-color: #CCC;
+  margin-right: 10px;
+  background-color: #1874de;
+  box-shadow: 5px 5px 0px 0px #0257ad, 10px 10px 0px 0px #64ceff;
+  color: #FFF;
+}
+.boxybutton-blue:hover {
+  background-color: #3f8eea;
+}
+.boxybutton-blue a {
+  color: #fff;
+}
+.boxybutton-red {
+  padding: 3px 10px 5px 10px;
+  background-color: #CCC;
+  margin-right: 10px;
+  background-color: #ba4343;
+  box-shadow: 5px 5px 0px 0px #822f2f, 10px 10px 0px 0px #d68d8d;
+  color: #FFF;
+}
+.boxybutton-green {
+  padding: 3px 10px 5px 10px;
+  background-color: #CCC;
+  margin-right: 10px;
+  background-color: #03864a;
+  box-shadow: 5px 5px 0px 0px #049f58, 10px 10px 0px 0px #05ea81;
+  color: #FFF;
+}
+.boxybutton-green a {
+  color: #fff;
+}
+.shoutout {
+  background-color: #5e6863;
+  font-size: 1.5em;
+}
+.sidelinks li a {
+  text-decoration: none;
+}
+.sidelinks {
+  margin-top: 10px;
+}
+.sidelinks li {
+  display: inline-block;
+}
+.sidelinks li a {
+  color: #084e8a;
+  font-size: 0.8em;
+  font-family: "Monospace";
+}
