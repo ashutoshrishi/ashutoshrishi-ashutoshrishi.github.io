@@ -29,6 +29,7 @@
     
     &:hover {
         background-color: lighten(@base-blue, 10%);
+        box-shadow: 5px 5px 0px 0px rgba(100, 206, 255, 1), 10px 10px 0px 0px rgba(2, 87, 173, 1);
     }
     
     a {
@@ -51,6 +52,10 @@
 
     a {
         color: #fff;
+    }
+
+    &:hover {
+        box-shadow: 5px 5px lighten(@base-green, 20%), 10px 10px lighten(@base-green, 10%);
     }
 }
 
@@ -76,4 +81,9 @@
         font-size: 0.8em;
         
     }
+
+    span {
+        margin-right: 25px;
+    }
 }
+

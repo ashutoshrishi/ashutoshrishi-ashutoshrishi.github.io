@@ -23,6 +23,7 @@
 }
 .boxybutton-blue:hover {
   background-color: #3f8eea;
+  box-shadow: 5px 5px 0px 0px #64ceff, 10px 10px 0px 0px #0257ad;
 }
 .boxybutton-blue a {
   color: #fff;
@@ -46,6 +47,9 @@
 .boxybutton-green a {
   color: #fff;
 }
+.boxybutton-green:hover {
+  box-shadow: 5px 5px #05ea81, 10px 10px #04b866;
+}
 .shoutout {
   background-color: #5e6863;
   font-size: 1.5em;
@@ -62,4 +66,7 @@
 .sidelinks li a {
   color: #084e8a;
   font-size: 0.8em;
+}
+.sidelinks span {
+  margin-right: 25px;
 }

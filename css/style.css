@@ -91,7 +91,7 @@ body {
 }
 
 .bordered {
-    border-right: 3px dashed #CCC;
+    border-right: 0px dashed #CCC;
 }
 
 
