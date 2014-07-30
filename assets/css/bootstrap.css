@@ -6234,6 +6234,7 @@ body {
   /* .push must be the same height as .footer */
 }
 .name {
+  margin-bottom: 10px;
   text-align: center;
 }
 .name p {
@@ -6425,28 +6426,28 @@ body {
 }
 .shout {
   margin-bottom: 7px;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 100;
 }
 .shoutout {
   margin-bottom: 7px;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 100;
   background-color: #76837d;
 }
 .shoutout-red {
   margin-bottom: 7px;
-  font-size: 1.5em;
   font-size: 2em;
   font-weight: 100;
 }
 .shoutout-blue {
   margin-bottom: 7px;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 100;
 }
 .shoutout-gray {
   margin-bottom: 7px;
+  font-size: 2em;
   font-size: 1.5em;
   font-weight: 100;
   background: #e6e6e6;
@@ -6470,8 +6471,29 @@ body {
 hr {
   border-color: #ccc;
 }
-.aboutbox {
-  padding-top: 10px;
-  padding-left: 25px;
+.jumper {
+  margin-top: 15px;
+  font-size: 2em;
+  font-weight: 100;
+  color: #fff;
+  text-align: center;
+  background: #6bbdcc;
+}
+.jumper span.glyphicon {
+  top: 5px;
+}
+.jumper:hover {
+  background: #7dd4e4;
+}
+@media (min-width: 768px) {
+  .jumper {
+    display: none;
+  }
+}
+a.shoutout-link:active,
+a.shoutout-link:hover,
+a.shoutout-link:active,
+a.shoutout-link:visited {
+  text-decoration: none;
 }
 /*# sourceMappingURL=bootstrap.css.map */
