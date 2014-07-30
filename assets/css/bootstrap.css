@@ -6234,12 +6234,11 @@ body {
   /* .push must be the same height as .footer */
 }
 .name {
-  margin-top: 10px;
-  margin-bottom: 110px;
+  text-align: center;
 }
 .name p {
   font-family: "Oswald", "Open Sans", sans-serif;
-  font-size: 5em;
+  font-size: 3em;
   color: #595959;
   letter-spacing: 5px;
 }
@@ -6247,18 +6246,10 @@ body {
   color: #3f8eea;
 }
 .name small {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 100;
   color: #aaa;
   letter-spacing: 3px;
-}
-.tag-title {
-  font-size: 4em;
-  font-weight: 100;
-  color: #8d8d8d;
-}
-.bordered {
-  margin-right: 20px;
 }
 .post-list {
   margin-top: 10px;
@@ -6266,7 +6257,6 @@ body {
 .post {
   width: 100%;
   max-width: 1000px;
-  padding-right: 15px;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -6274,7 +6264,7 @@ body {
   margin: auto;
 }
 .post-title {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 300;
   color: #595959;
 }
@@ -6305,21 +6295,29 @@ body {
   color: #444;
 }
 .post-summary p {
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #50585d;
 }
 .blog-logo img {
   min-height: 200px;
 }
-.col-xs-12 .name {
-  padding-left: 20px;
-  margin-top: 20px;
-}
-.col-xs-12 .name p {
-  line-height: 70px;
-}
-.col-xs-12 .content {
-  padding: 15px;
+@media (min-width: 768px) {
+  .name {
+    margin-top: 40px;
+    text-align: left;
+  }
+  .name p {
+    font-size: 5em;
+  }
+  .name small {
+    font-size: 2em;
+  }
+  .post-title {
+    font-size: 3em;
+  }
+  .post-summary p {
+    font-size: 1.5em;
+  }
 }
 .boxybutton {
   padding: 3px 10px 5px 10px;
@@ -6426,33 +6424,28 @@ body {
   font-weight: 100;
 }
 .shout {
-  margin: auto;
   margin-bottom: 7px;
   font-size: 1.5em;
   font-weight: 100;
 }
 .shoutout {
-  margin: auto;
   margin-bottom: 7px;
   font-size: 1.5em;
   font-weight: 100;
   background-color: #76837d;
 }
 .shoutout-red {
-  margin: auto;
   margin-bottom: 7px;
   font-size: 1.5em;
   font-size: 2em;
   font-weight: 100;
 }
 .shoutout-blue {
-  margin: auto;
   margin-bottom: 7px;
   font-size: 1.5em;
   font-weight: 100;
 }
 .shoutout-gray {
-  margin: auto;
   margin-bottom: 7px;
   font-size: 1.5em;
   font-weight: 100;
