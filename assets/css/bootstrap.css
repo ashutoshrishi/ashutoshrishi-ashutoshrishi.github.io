@@ -6217,6 +6217,22 @@ body {
   -webkit-background-size: 220px 220px;
           background-size: 220px 220px;
 }
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto -300px;
+  /* the bottom margin is the negative value of the footer's height */
+}
+.site-footer,
+.push {
+  height: 300px;
+  /* .push must be the same height as .footer */
+}
 .name {
   margin-top: 10px;
   margin-bottom: 110px;
