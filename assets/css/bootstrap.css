@@ -6315,6 +6315,8 @@ body {
   }
   .post-title {
     font-size: 3em;
+    color: #428bca;
+    text-decoration: underline;
   }
   .post-summary p {
     font-size: 1.5em;
