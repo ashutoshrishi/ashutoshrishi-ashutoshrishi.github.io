@@ -6233,6 +6233,9 @@ body {
   height: 300px;
   /* .push must be the same height as .footer */
 }
+.main {
+  font-size: 2em;
+}
 .name {
   margin-bottom: 10px;
   text-align: center;
@@ -6263,6 +6266,9 @@ body {
 }
 .post-full {
   margin: auto;
+}
+.page-title {
+  font-size: 3em;
 }
 .post-title {
   font-size: 2em;
