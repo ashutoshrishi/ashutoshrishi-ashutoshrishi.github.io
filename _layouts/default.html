@@ -6,7 +6,7 @@
     <body>
 
 
-    
+
     <div class="container-fluid wrapper">
       <div class="row">
         <div class="col-xs-12">
@@ -17,7 +17,7 @@
           </a>
         </div>
       </div>
-      
+
       <div class="row">
         <div class="col-md-3 col-xs-12">
             <div class="home"></div>
@@ -29,7 +29,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="row">
         <div class="col-md-3 col-xs-12">
 
@@ -55,8 +55,17 @@
               </div>
             </a>
             <a href="#" class="shoutout-link">
-              <div class="boxybutton-green shoutout">
+              <div class="boxybutton-green shoutout" id="about-link">
                 About Me
+                <div style="display:none;font-size:0.75em" id="hidden-about">
+                  <hr>
+                  I am a Computer Science student in University of Melbourne
+                  (post graduate).
+                  I design websites as a hobby and love developing in Python,
+                  Javascript, Haskell and more. Let's get in touch:
+                  <br>
+
+                </div>
               </div>
             </a>
 
@@ -66,7 +75,7 @@
         <div class="col-md-9 col-xs-12">
           <a name="blog"></a>
           {{ content }}
-          
+
         </div>
       </div>
       <br/>
