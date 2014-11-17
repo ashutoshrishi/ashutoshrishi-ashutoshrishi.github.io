@@ -1,0 +1,183 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Oswald:300);
+
+@left-width: 300px;
+
+            
+body {
+   font-family: Helvetica, "Helvetica Neue", "Open Sans", sans-serif;
+   font-weight: 300;
+   background-color: #ffffff;
+   min-height: 100%;
+}
+
+.home {
+  background-image: url("../assets/images/logo-retina@2x.png");
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: 220px 220px;
+  min-height: 240px;
+  text-align: center;
+}
+
+html, body {
+    height: 100%;
+}
+
+a:link:visited:active {
+  color: #205CAA;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #5A7FA0;
+  text-decoration: underline;
+  background: #F0F8FF
+}
+
+#wrapper {
+  padding-left: @left-width;
+  transition: all 0.4s ease 0s;
+}
+
+#sidebar-wrapper {
+  margin-left: -@left-width;
+  left: @left-width;
+  width: @left-width;
+  background: whitesmoke;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: @left-width;
+  margin: 0;
+  padding: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.main {
+  padding-right: 200px;
+}
+
+
+@media (max-width:767px) {
+
+    #wrapper {
+      padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+      left: 0;
+    }
+
+    #wrapper.active {
+      position: relative;
+      left: @left-width;
+    }
+
+    #wrapper.active #sidebar-wrapper {
+      left: @left-width;
+      width: @left-width;
+      transition: all 0.4s ease 0s;
+    }
+
+    .main {
+      padding: 10px;
+    }
+
+}
+
+
+.page-title {
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+.name {    
+  margin-bottom: 20px;
+  border-bottom: 1px dotted #AAAAAA;
+  padding-bottom: 30px;
+  
+    p {
+        font-family: "Oswald", "Open Sans", sans-serif;
+        font-size: 5em;
+        color: rgba(89, 89, 89, 1);
+        letter-spacing: 5px;
+        margin: 0;
+
+        strong {
+            color: #3f8eea;
+        }
+    }
+
+    small {
+        font-weight: 100;
+        font-size: 1.5em;
+        color: #AAA;
+    }
+
+}
+
+.post-list {
+    margin-top: 10px;
+}
+
+.post {
+    margin: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1000px;
+    font-family: "Helvetica", "Open Sans", "sans-serif";
+}
+
+.post-full {
+    margin: auto;
+}
+
+.post-title {
+    font-size: 2em;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.post-subtitle {
+    margin-bottom: 5px;
+}
+
+.post-content {
+    font-family: "Helvetica", 'Open Sans',sans-serif;
+    line-height: 1.5;
+    color: #4d4e53;
+    font-size: 18px;
+
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        font-family:"Helvetica", 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+}
+
+.post-summary em {
+    color: lighten(#111111, 20%);
+}
+
+.post-summary p {
+    font-size: 1.2em;
+    color: #50585D;
+}
+
+.blog-logo img {
+    min-height: 200px;
+}
+
+@import "ui";
