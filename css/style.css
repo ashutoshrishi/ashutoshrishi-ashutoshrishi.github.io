@@ -430,3 +430,15 @@ a.shoutout-link:visited {
     font-size: 1.2em;
   }
 }
+/* Books */
+.cover-image {
+  max-width: 150px;
+  max-height: 220px;
+}
+.owl-prev,
+.owl-next {
+  display: inline-block;
+}
+.owl-prev {
+  content: "r";
+}
