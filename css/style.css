@@ -159,10 +159,6 @@ a:hover {
   #sidebar-wrapper {
     left: 0;
   }
-  #wrapper.active {
-    position: relative;
-    left: 300px;
-  }
   #wrapper.active #sidebar-wrapper {
     left: 300px;
     width: 300px;
