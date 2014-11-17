@@ -37,7 +37,10 @@ a:hover {
 
 #wrapper {
   padding-left: @left-width;
-  transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 #sidebar-wrapper {
@@ -49,12 +52,24 @@ a:hover {
   height: 100%;
   overflow-y: auto;
   z-index: 1000;
-  transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.active #sidebar-wrapper {
+  width: @left-width;
 }
 
 #page-content-wrapper {
   width: 100%;
-  overflow-x: hidden;
+  padding: 15px;
+}
+
+#wrapper.active #page-content-wrapper {
+    position: absolute;
+    margin-right: -@left-width;
 }
 
 .sidebar-nav {
@@ -67,37 +82,6 @@ a:hover {
   padding-left: 15px;
 }
 
-.main {
-  padding-right: 200px;
-}
-
-
-@media (max-width:767px) {
-
-    #wrapper {
-      padding-left: 0;
-    }
-
-    #sidebar-wrapper {
-      left: 0;
-    }
-
-    #wrapper.active {
-      position: relative;
-      left: @left-width;
-    }
-
-    #wrapper.active #sidebar-wrapper {
-      left: @left-width;
-      width: @left-width;
-      transition: all 0.4s ease 0s;
-    }
-
-    .main {
-      padding: 10px;
-    }
-
-}
 
 
 .page-title {
@@ -130,6 +114,10 @@ a:hover {
 
 }
 
+.content {
+  
+}
+
 .post-list {
     margin-top: 10px;
 }
@@ -156,6 +144,8 @@ a:hover {
     margin-bottom: 5px;
 }
 
+
+
 .post-content {
     font-family: "Helvetica", 'Open Sans',sans-serif;
     line-height: 1.5;
@@ -178,6 +168,59 @@ a:hover {
 
 .blog-logo img {
     min-height: 200px;
+}
+
+@media (max-width:767px) {
+
+    #wrapper {
+      padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+      left: 0;
+    }
+
+    #wrapper.active {
+      position: relative;
+      left: @left-width;
+    }
+
+    #wrapper.active #sidebar-wrapper {
+      left: @left-width;
+      width: @left-width;
+      -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    }
+    
+    #page-content-wrapper {
+      padding: 15px;
+      padding-top: 5px;
+      margin-top: 0px;
+    }
+
+    .name {
+      margin-top: 5px;
+      p {
+        font-size: 2em;
+      }
+
+      small {
+        font-size: 1em;
+      }
+    }
+
+}
+
+@media (max-width: 400px) {
+  .name {
+    text-align: center;
+    p {
+      font-size: 2em;
+      letter-spacing: 2px;
+    }
+  }
 }
 
 @import "ui";
