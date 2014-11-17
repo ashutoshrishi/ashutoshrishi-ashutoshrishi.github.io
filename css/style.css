@@ -18,6 +18,9 @@ html,
 body {
   height: 100%;
 }
+.main {
+  font-size: 1.5em;
+}
 a:link:visited:active {
   color: #205CAA;
   text-decoration: underline;
@@ -71,6 +74,7 @@ a:hover {
 .page-title {
   margin-top: 20px;
   font-size: 2em;
+  color: #205CAA;
 }
 .name {
   margin-bottom: 20px;
@@ -394,8 +398,11 @@ a.shoutout-link:visited {
 .dotted-box a:hover {
   text-decoration: none;
 }
+.dotted-box:hover {
+  background: #F0F8FF;
+}
 @media (max-width: 500px) {
   .dotted-box {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 }

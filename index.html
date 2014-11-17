@@ -5,9 +5,9 @@ layout: default
 <div class="content">
 
 
-  <div class="posts">
+  <ul class="posts">
     {% for post in site.posts %}
-      <article class="post">
+      <li class="post">
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
 
           <a class="post-title" href="{{ post.url | prepend: site.baseurl }}">
@@ -16,11 +16,11 @@ layout: default
           <div class="post-summary">
             {{ post.excerpt }}
           </div>
-      </article>
+      </li>
 
       <br>
     {% endfor %}
-  </div>
+  </ul>
      
   <br>
   <span class="dotted-box">
