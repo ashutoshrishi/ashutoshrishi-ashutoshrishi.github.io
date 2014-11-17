@@ -186,3 +186,33 @@ a.shoutout-link:visited {
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
 }
+
+.dotted-box {
+  border: 1px dotted #AAA;
+  padding: 5px 10px 5px 10px;
+  font-size: 1.75em;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 100;
+  margin-right: 10px;
+  
+  a {
+    text-decoration: underline;
+  }
+  
+  a:link:visited:active {
+    text-decoration: underline;    
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .dotted-box {
+    font-size: 1.4em;
+  }
+
+}
+
