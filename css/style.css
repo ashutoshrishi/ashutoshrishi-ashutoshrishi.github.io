@@ -76,10 +76,11 @@ a:hover {
   font-size: 2em;
   color: #205CAA;
 }
+.dotted {
+  border-top: 1px dotted #AAA;
+}
 .name {
-  margin-bottom: 20px;
-  border-bottom: 1px dotted #AAAAAA;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .name p {
   font-family: "Oswald", "Open Sans", sans-serif;
@@ -400,6 +401,33 @@ a.shoutout-link:visited {
 }
 .dotted-box:hover {
   background: #F0F8FF;
+}
+.dotted-box-icon {
+  border: 1px dotted #AAA;
+  padding: 5px 10px 5px 10px;
+  font-size: 1.75em;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 100;
+  margin-right: 10px;
+}
+.dotted-box-icon a {
+  text-decoration: underline;
+}
+.dotted-box-icon a:link:visited:active {
+  text-decoration: underline;
+}
+.dotted-box-icon a:hover {
+  text-decoration: none;
+}
+.dotted-box-icon a {
+  text-decoration: none;
+  color: #a1a1a1;
+}
+.dotted-box-icon a:hover {
+  background: none;
+}
+.dotted-box-icon:hover {
+  background: whitesmoke;
 }
 @media (max-width: 500px) {
   .dotted-box {

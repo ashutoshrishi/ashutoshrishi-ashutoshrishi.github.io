@@ -48,12 +48,38 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-12">
+  
                 <div class="name hidden-xs">
                   <p>ASHUTOSH <strong>RISHI</strong> RANJAN</p>
                   <small style="font-family:'Open Sans'">
                     Developer and Designer, Blog on experiences.</small>
                 </div>
                 <div class="home visible-xs-block"></div>
+
+                
+                <!-- Twitter SVG icon -->
+
+                {% if site.twitter_username  %}
+                <span class="dotted-box-icon" style="padding-right:4px">
+                  <a href="https://twitter.com/ashutoshrishi">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </span>
+                {% endif %}
+                
+                <!-- Github SVG icon -->
+                {% if site.github_username %}
+                <span class="dotted-box-icon">
+                  <a href="https://github.com/{{ site.github_username }}">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </span>
+                {% endif %}
+
+      
+                
+                <hr class="dotted">
+                
                 <!-- content of page -->
                 {{ content }}
                 
