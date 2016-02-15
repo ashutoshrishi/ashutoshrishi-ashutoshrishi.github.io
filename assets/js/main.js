@@ -14,17 +14,17 @@ $(document).ready(function() {
         responsive:{
             0:{
                 items:2,
-                center: true                
+                center: true
             },
             600:{
                 items:4,
-                center: true                
+                center: true
             },
             1000:{
                 items:5,
                 center: true
             }
         }
-    })
-    
+    });
+
 });
